@@ -32,4 +32,6 @@ loop = asyncio.get_event_loop()
 loop.run_until_complete(init(loop))
 loop.run_forever()
 
-
+# fixme:Error running app:
+# Cannot start process,the working directory
+# ‘Users/wangzhennnig/PycharmProjects/awesome-python3-webapp/dist’ does not exis
