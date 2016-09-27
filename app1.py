@@ -18,9 +18,8 @@ from aiohttp import web
 
 
 def index(request):
-	return web.Response(body=b'<h1>Awesome<h1>')
-
-
+	return web.Response(body=b'<h1>Awesome<h1>', content_type='text/html', charset='utf-8')
+# fixed the problem: download a file and there is string :<h1>Awesome<h1>
 
 async def init(loop):
 	app = web.Application(loop=loop)
